@@ -11,16 +11,26 @@ app.get('/', (req, res) => {
     console.log(dialogue);
 });
 
-app.use(
-    cors({
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    }
-}));
+// app.use(
+//     cors({
+//     origin: function (origin, callback) {
+//         if (!origin || allowedOrigins.includes(origin)) {
+//             callback(null, true);
+//         } else {
+//             callback(new Error('Not allowed by CORS'));
+//         }
+//     }
+// }));
+
+const cors = require('cors');
+
+const corsOptions = {
+    origin: 'http://127.0.0.1:5500', // Replace with your frontend URL
+    methods: 'GET,POST', // Allowed HTTP methods
+};
+
+app.use(cors(corsOptions));
+
 
 
 const PORT = process.env.PORT || 3000;
