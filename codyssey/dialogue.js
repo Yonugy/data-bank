@@ -1,23 +1,72 @@
 const dialogue = {
-  "bin":{
-    "quest1intro":{
-        "Do you want to live in bin or marry bin?":{
-            "Live in bin":"Welcome home Ben, you definitely belong in the bin!",
-            "Marry bin":"Congrats on your marriage!"
+  bin: {
+    quest1intro: {
+      "Do you want to live in bin or marry bin?": {
+        "Live in bin": {
+            respond: "Welcome home Ben, you definitely belong in the bin!"
         },
-        "Please go get some help!":"",
-        "Who will even want to live in bin or even marry the smelly bin.":"",
-        "Ben is the first one that does it no cap no aura.":"",
-        "Now go get the shit in the toilet.":"",
-        }
+        "Marry bin": {
+            respond: "Congrats on your marriage!"
+        },
+      },
+      "Please go get some help!": "",
+      "Who will even want to live in bin or even marry the smelly bin.": "",
+      "Ben is the first one that does it no cap no aura.": "",
+      "Now go get the shit in the toilet.": "",
     },
 
-    "quest1idle":{
-        "Go get the shit in the toilet!":""
+    quest1start: {
+      "Go get the shit in the toilet!": "",
     },
 
-    "question2":""
+    quest2intro: {
+      "Good job in getting the shit in the skibidi toilet!": "",
+      "Next, go get the trash in the oiia!": "",
+    },
 
+    quest2start: {
+      "Go get the trash in the oiia!": "",
+    },
+
+    quest3intro: {
+      "Go get the trash in the oiia!": "",
+    },
+  },
+
+  apu: {
+    quest1start: {
+      "What do you want?": {
+        Trash: {
+          item: "trash",
+          mode: "take",
+          respond: "Here you go! Trash taking trash!",
+        },
+
+        Shit: {
+          item: "shit",
+          mode: "take",
+          respond: "Here you go! Shit taking shit!",
+        },
+      },
+    },
+  },
+
+  cat: {
+    quest1start: {
+        "Oiiai, oiiai":"",
+      "Oiiai, oiiai?": {
+        "Give Trash": {
+          item: "trash",
+          mode: "give",
+          respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+        },
+
+        Bye: {
+          respond: "Oiiai, oiiai",
+        },
+      },
+    },
+  }
 };
 
 module.exports = { dialogue };

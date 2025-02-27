@@ -27,22 +27,7 @@ app.get('/quest', (req, res) => {
     console.log(quest);
 });
 
-// app.use(
-//     cors({
-//     origin: function (origin, callback) {
-//         if (!origin || allowedOrigins.includes(origin)) {
-//             callback(null, true);
-//         } else {
-//             callback(new Error('Not allowed by CORS'));
-//         }
-//     }
-// }));
-
-
-
-
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
-});
+}););
