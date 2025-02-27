@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const {dialogue} = require("./codyssey/dialogue")
+const {quest} = require("./codyssey/quest")
+
 
 const allowedOrigins = [
     "http://127.0.0.1:5500"
@@ -18,6 +20,11 @@ app.use(cors(corsOptions));
 app.get('/', (req, res) => {
     res.json(dialogue);
     console.log(dialogue);
+});
+
+app.get('/abc', (req, res) => {
+    res.json(quest);
+    console.log(quest);
 });
 
 // app.use(
