@@ -17,12 +17,12 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.get('/', (req, res) => {
+app.get('/dialogue', (req, res) => {
     res.json(dialogue);
     console.log(dialogue);
 });
 
-app.get('/abc', (req, res) => {
+app.get('/quest', (req, res) => {
     res.json(quest);
     console.log(quest);
 });
