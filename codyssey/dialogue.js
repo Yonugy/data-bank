@@ -51,8 +51,25 @@ const dialogue = {
     },
   },
 
-  cat: {
+  toilet: {
     quest1start: {
+        "Oiiai, oiiai":"",
+      "Oiiai, oiiai?": {
+        "Give Trash": {
+          item: "trash",
+          mode: "give",
+          respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+        },
+
+        Bye: {
+          respond: "Oiiai, oiiai",
+        },
+      },
+    },
+  },
+
+  cat: {
+    quest2start: {
         "Oiiai, oiiai":"",
       "Oiiai, oiiai?": {
         "Give Trash": {
