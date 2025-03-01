@@ -3,16 +3,19 @@ const dialogue = {
     quest1intro: {
       "Do you want to live in bin or marry bin?": {
         "Live in bin": {
-            respond: "Welcome home Ben, you definitely belong in the bin!"
+          respond: "Welcome home Ben, you definitely belong in the bin!",
         },
         "Marry bin": {
-            respond: "Congrats on your marriage!"
+          respond: "Congrats on your marriage!",
         },
       },
       "Please go get some help!": "",
       "Who will even want to live in bin or even marry the smelly bin.": "",
       "Ben is the first one that does it no cap no aura.": "",
-      "Now go get the shit in the toilet.": "",
+      "Now go get the shit in the toilet.": {
+        fulfill: "end_quest1_intro",
+        respond: "",
+      },
     },
 
     quest1start: {
@@ -21,7 +24,10 @@ const dialogue = {
 
     quest2intro: {
       "Good job in getting the shit in the skibidi toilet!": "",
-      "Next, go get the trash in the oiia!": "",
+      "Next, go get the trash in the oiia!": {
+        fulfill: "end_quest2_intro",
+        respond: "",
+      },
     },
 
     quest2start: {
@@ -29,7 +35,7 @@ const dialogue = {
     },
 
     quest3intro: {
-      "Go get the trash in the oiia!": "",
+      "Good job!": "",
     },
   },
 
@@ -53,12 +59,33 @@ const dialogue = {
 
   toilet: {
     quest1start: {
-        "Oiiai, oiiai":"",
+      "Skibidi skibidi toilet": "",
+      "What is your problem?": {
+        "Give Shit": {
+          item: "trash",
+          mode: "give",
+          yrespond: "HUUUURGGEHH",
+          nrespond:
+            "Bro doesn't have shit. I wonder what does bro still can have.",
+          fulfill: "done_shit_to_toilet",
+        },
+
+        Bye: {
+          respond: "What the sigma?",
+        },
+      },
+    },
+  },
+
+  cat: {
+    quest2start: {
+      "Oiiai, oiiai": "",
       "Oiiai, oiiai?": {
         "Give Trash": {
           item: "trash",
           mode: "give",
           respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+          fulfill: "done_trash_to_cat",
         },
 
         Bye: {
@@ -67,23 +94,6 @@ const dialogue = {
       },
     },
   },
-
-  cat: {
-    quest2start: {
-        "Oiiai, oiiai":"",
-      "Oiiai, oiiai?": {
-        "Give Trash": {
-          item: "trash",
-          mode: "give",
-          respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
-        },
-
-        Bye: {
-          respond: "Oiiai, oiiai",
-        },
-      },
-    },
-  }
 };
 
 module.exports = { dialogue };
