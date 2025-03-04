@@ -2,11 +2,13 @@ const dialogue = {
   bin: {
     quest1intro: {
       "Do you want to live in bin or marry bin?": {
-        "Live in bin": {
-          respond: "Welcome home Ben, you definitely belong in the bin!",
-        },
-        "Marry bin": {
-          respond: "Congrats on your marriage!",
+        choice: {
+          "Live in bin": {
+            respond: "Welcome home Ben, you definitely belong in the bin!",
+          },
+          "Marry bin": {
+            respond: "Congrats on your marriage!",
+          },
         },
       },
       "Please go get some help!": "",
@@ -42,16 +44,18 @@ const dialogue = {
   apu: {
     quest1start: {
       "What do you want?": {
-        Trash: {
-          item: "trash",
-          mode: "take",
-          respond: "Here you go! Trash taking trash!",
-        },
+        choice: {
+          Trash: {
+            item: "trash",
+            mode: "take",
+            respond: "Here you go! Trash taking trash!",
+          },
 
-        Shit: {
-          item: "shit",
-          mode: "take",
-          respond: "Here you go! Shit taking shit!",
+          Shit: {
+            item: "shit",
+            mode: "take",
+            respond: "Here you go! Shit taking shit!",
+          },
         },
       },
     },
@@ -61,17 +65,19 @@ const dialogue = {
     quest1start: {
       "Skibidi skibidi toilet": "",
       "What is your problem?": {
-        "Give Shit": {
-          item: "trash",
-          mode: "give",
-          yrespond: "HUUUURGGEHH",
-          nrespond:
-            "Bro doesn't have shit. I wonder what does bro still can have.",
-          fulfill: "done_shit_to_toilet",
-        },
+        choice: {
+          "Give Shit": {
+            item: "trash",
+            mode: "give",
+            yrespond: "HUUUURGGEHH",
+            nrespond:
+              "Bro doesn't have shit. I wonder what does bro still can have.",
+            fulfill: "done_shit_to_toilet",
+          },
 
-        Bye: {
-          respond: "What the sigma?",
+          Bye: {
+            respond: "What the sigma?",
+          },
         },
       },
     },
@@ -81,15 +87,17 @@ const dialogue = {
     quest2start: {
       "Oiiai, oiiai": "",
       "Oiiai, oiiai?": {
-        "Give Trash": {
-          item: "trash",
-          mode: "give",
-          respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
-          fulfill: "done_trash_to_cat",
-        },
+        choice: {
+          "Give Trash": {
+            item: "trash",
+            mode: "give",
+            respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+            fulfill: "done_trash_to_cat",
+          },
 
-        Bye: {
-          respond: "Oiiai, oiiai",
+          Bye: {
+            respond: "Oiiai, oiiai",
+          },
         },
       },
     },
