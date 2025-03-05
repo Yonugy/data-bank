@@ -59,6 +59,23 @@ const dialogue = {
         },
       },
     },
+    quest2start: {
+      "What do you want?": {
+        choice: {
+          Trash: {
+            item: "trash",
+            mode: "take",
+            respond: "Here you go! Trash taking trash!",
+          },
+
+          Shit: {
+            item: "shit",
+            mode: "take",
+            respond: "Here you go! Shit taking shit!",
+          },
+        },
+      },
+    }
   },
 
   toilet: {

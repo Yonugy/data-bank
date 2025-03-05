@@ -13,10 +13,9 @@ const quest = {
       quest1start: {
         title: "b",
         criteria:["done_shit_to_toilet"],
-        nextsubquest:0
       },
     },
-    
+
     nextquest:"quest2"
   },
 
@@ -32,7 +31,6 @@ const quest = {
       quest2start: {
         title: "d",
         criteria:["done_trash_to_cat"],
-        nextsubquest:0
       },
     },
     nextquest:"quest3"
