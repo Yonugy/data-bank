@@ -67,7 +67,7 @@ const dialogue = {
       "What is your problem?": {
         choice: {
           "Give Shit": {
-            item: "trash",
+            item: "shit",
             mode: "give",
             yrespond: "HUUUURGGEHH",
             nrespond:
