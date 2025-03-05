@@ -85,7 +85,9 @@ const dialogue = {
 
   cat: {
     quest2start: {
-      "Oiiai, oiiai": "",
+      "Oiiai, oiiai": {
+        animation: "cat_turn"
+      },
       "Oiiai, oiiai?": {
         choice: {
           "Give Trash": {
