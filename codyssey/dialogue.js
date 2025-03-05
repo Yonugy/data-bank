@@ -110,7 +110,9 @@ const dialogue = {
           "Give Trash": {
             item: "trash",
             mode: "give",
-            respond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+            yrespond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+            nrespond:
+              "Nub trash, I can now talk English more than just oiia because I see you nub",
             fulfill: "done_trash_to_cat",
           },
 
