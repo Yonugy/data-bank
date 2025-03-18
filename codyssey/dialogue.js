@@ -4,7 +4,7 @@ const dialogue = {
       "Do you want to live in bin or marry bin?": {
         choice: {
           "Live in bin": {
-            respond: "Welcome home Ben, you definitely belong in the bin!",
+            respond: "Welcome home, you definitely belong in the bin!",
           },
           "Marry bin": {
             respond: "Congrats on your marriage!",
@@ -13,7 +13,7 @@ const dialogue = {
       },
       "Please go get some help!": "",
       "Who will even want to live in bin or even marry the smelly bin.": "",
-      "Ben is the first one that does it no cap no aura.": "",
+      "You are the first one that does it no cap no aura.": "",
       "Now go get the shit in the toilet.": {
         fulfill: "end_quest1_intro",
         respond: "",
