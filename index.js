@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const {dialogue} = require("./codyssey/dialogue")
 const {quest} = require("./codyssey/quest")
+const {door} = require("./codyssey/door")
+const {indoor} = require("./codyssey/indoor")
 
 const cors = require('cors');
 
@@ -20,6 +22,16 @@ app.get('/', (req, res) => {
 app.get('/quest', (req, res) => {
     res.json(quest);
     console.log(quest);
+});
+
+app.get('/door', (req, res) => {
+    res.json(door);
+    console.log(door);
+});
+
+app.get('/indoor', (req, res) => {
+    res.json(indoor);
+    console.log(indoor);
 });
 
 const PORT = process.env.PORT || 3000;
