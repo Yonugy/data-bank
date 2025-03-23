@@ -7,11 +7,11 @@ const indoor = {
     spawn: {x: 415, y: 780,}
   },
   ownhouse:{
-    scale: 1.2,
+    scale: 3,
     img: "ownhouse_interior",
     label: "Your House",
     parent: "town",
-    spawn: {x: 215, y: 325,}
+    spawn: {x: 215, y: 310,}
   }
 };
 
