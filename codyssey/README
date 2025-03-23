@@ -1,0 +1,7 @@
+Indoor:
+ include all places that can be entered except main scene (town)
+
+Door:
+ *must* include every scene include main scene (town) and indoor scene
+ each scene must need one item with no "to"
+ if "to" does not exist, it means the specific door is the exit door of the indoor scene

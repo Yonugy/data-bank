@@ -31,6 +31,17 @@ const door = {
       },
     },
   ],
+
+  ownhouse: [
+    {
+      position: {
+        x1: 192,
+        y1: 320,
+        x2: 239,
+        y2: 335,
+      },
+    },
+  ],
 };
 
 module.exports = { door };

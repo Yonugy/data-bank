@@ -11,7 +11,7 @@ const indoor = {
     img: "ownhouse_interior",
     label: "Your House",
     parent: "town",
-    spawn: {x: 415, y: 780,}
+    spawn: {x: 215, y: 325,}
   }
 };
 
