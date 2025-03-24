@@ -4,6 +4,8 @@ const {dialogue} = require("./codyssey/dialogue")
 const {quest} = require("./codyssey/quest")
 const {door} = require("./codyssey/door")
 const {indoor} = require("./codyssey/indoor")
+const {npc} = require("./codyssey/npc")
+
 
 const cors = require('cors');
 
@@ -32,6 +34,11 @@ app.get('/door', (req, res) => {
 app.get('/indoor', (req, res) => {
     res.json(indoor);
     console.log(indoor);
+});
+
+app.get('/npc', (req, res) => {
+    res.json(npc);
+    console.log(npc);
 });
 
 const PORT = process.env.PORT || 3000;
