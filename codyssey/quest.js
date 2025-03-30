@@ -64,6 +64,13 @@ const quest = {
     subquest: {
       quest3intro: {
         title: "e",
+        criteria: ["end_quest3_intro"],
+        npc: {
+          bin: { position: { x: 390, y: 400 } },
+          apu: { position: { x: 670, y: 440 } },
+          toilet: { position: { x: 980, y: 330 } },
+          cat: { position: { x: 330, y: 580 } },
+        },
       },
     },
   },
