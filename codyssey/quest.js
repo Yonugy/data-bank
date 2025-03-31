@@ -76,17 +76,47 @@ const quest = {
           toilet: { position: { x: 980, y: 330 } },
           cat: { position: { x: 330, y: 580 } },
         },
+        nextsubquest: "quest3point1",
+      },
+
+      quest3point1:{
+        title: "Intro to Beh House",
+        location: "house1",
+        criteria: ["end_quest3_point_1"],
+        npc: {
+          bin: { position: { x: 350, y: 350 } },
+          samurai: { position: { x: 800, y: 225 } },
+        },
         nextsubquest: "quest3start",
       },
 
       quest3start:{
-        title: "Intro to Beh House",
+        title: "Intro to Samurai",
         location: "house1",
+        criteria: ["end_quest3_start"],
         npc: {
           bin: { position: { x: 350, y: 350 } },
           samurai: { position: { x: 800, y: 225 } },
         },
       }
+    },
+    nextquest: "quest4",
+  },
+
+  quest4: {
+    startquest: "quest4intro",
+    subquest: {
+      quest4intro: {
+        title: "Back to Town",
+        location: "town",
+        criteria: ["end_quest4_intro"],
+        npc: {
+          bin: { position: { x: 390, y: 400 } },
+          apu: { position: { x: 670, y: 440 } },
+          toilet: { position: { x: 980, y: 330 } },
+          cat: { position: { x: 330, y: 580 } },
+        },
+      },
     },
   },
 };

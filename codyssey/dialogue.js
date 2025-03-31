@@ -43,6 +43,15 @@ const dialogue = {
         respond: "",
       }
     },
+
+    quest3point1: {
+      "Go talk to Samurai": {
+        fulfill: "end_quest3_point_1",
+        respond: "",
+      },
+    },
+
+    
   },
 
   apu: {
@@ -127,6 +136,16 @@ const dialogue = {
       },
     },
   },
+
+  samurai:{
+    quest3start: {
+      "Hello, I am Samurai!": "",
+      "Bye, nothing to do in the house.": {
+        fulfill: "end_quest3_start",
+        respond: "",
+      },
+    },
+  }
 };
 
 module.exports = { dialogue };
