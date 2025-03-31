@@ -6,6 +6,7 @@ const quest = {
     subquest: {
       quest1intro: {
         title: "a",
+        location: "town",
         criteria: ["end_quest1_intro"],
         npc: {
           bin: { position: { x: 390, y: 400 } },
@@ -18,6 +19,7 @@ const quest = {
 
       quest1start: {
         title: "b",
+        location: "town",
         criteria: ["done_shit_to_toilet"],
         npc: {
           bin: { position: { x: 390, y: 400 } },
@@ -35,6 +37,7 @@ const quest = {
     subquest: {
       quest2intro: {
         title: "c",
+        location: "town",
         criteria: ["end_quest2_intro"],
         npc: {
           bin: { position: { x: 390, y: 400 } },
@@ -47,6 +50,7 @@ const quest = {
 
       quest2start: {
         title: "d",
+        location: "town",
         criteria: ["done_trash_to_cat"],
         npc: {
           bin: { position: { x: 390, y: 400 } },
@@ -64,6 +68,7 @@ const quest = {
     subquest: {
       quest3intro: {
         title: "e",
+        location: "town",
         criteria: ["end_quest3_intro"],
         npc: {
           bin: { position: { x: 390, y: 400 } },
@@ -71,7 +76,17 @@ const quest = {
           toilet: { position: { x: 980, y: 330 } },
           cat: { position: { x: 330, y: 580 } },
         },
+        nextsubquest: "quest3start",
       },
+
+      quest3start:{
+        title: "Intro to Beh House",
+        location: "house1",
+        npc: {
+          bin: { position: { x: 390, y: 400 } },
+          samurai: { position: { x: 500, y: 500 } },
+        },
+      }
     },
   },
 };

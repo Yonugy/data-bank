@@ -38,6 +38,10 @@ const dialogue = {
 
     quest3intro: {
       "Good job!": "",
+      "You can now go to Beh's House!":{
+        fulfill: "end_quest3_intro",
+        respond: "",
+      }
     },
   },
 

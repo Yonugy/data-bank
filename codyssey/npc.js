@@ -36,6 +36,25 @@ const npc = {
     },
     initialFrame: 0,
   },
+  samurai: {
+    name: "Samurai",
+    type: "spritesheet",
+    img: "samurai_idle.png",
+    scale: 1,
+    frameSize: {
+        width: 128,
+        height: 128,
+    },
+    animation: {
+        samurai_idle:{
+            startFrame:0,
+            endFrame: 5,
+            frameRate: 60,
+            repeat: 0,
+        },
+    },
+    initialFrame: 0,
+  },
 };
 
 module.exports = { npc };
