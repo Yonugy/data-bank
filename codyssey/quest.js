@@ -1,5 +1,5 @@
 const quest = {
-  init: "quest1",
+  init: "quest3",
 
   quest1: {
     startquest: "quest1intro",
@@ -83,8 +83,8 @@ const quest = {
         title: "Intro to Beh House",
         location: "house1",
         npc: {
-          bin: { position: { x: 390, y: 400 } },
-          samurai: { position: { x: 500, y: 500 } },
+          bin: { position: { x: 350, y: 350 } },
+          samurai: { position: { x: 800, y: 225 } },
         },
       }
     },
