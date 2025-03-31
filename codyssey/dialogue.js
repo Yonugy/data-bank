@@ -51,7 +51,6 @@ const dialogue = {
       },
     },
 
-    
   },
 
   apu: {
@@ -140,7 +139,7 @@ const dialogue = {
   samurai:{
     quest3start: {
       "Hello, I am Samurai!": "",
-      "Bye, nothing to do in the house.": {
+      "Nothing to do in the house. Get out!!!": {
         fulfill: "end_quest3_start",
         respond: "",
       },
