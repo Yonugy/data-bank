@@ -1,5 +1,5 @@
 const quest = {
-  init: "quest3",
+  init: "quest3", //need change back to quest 1 after testing
 
   quest1: {
     startquest: "quest1intro",
