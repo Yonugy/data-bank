@@ -18,6 +18,7 @@ const location = {
     bgcolor: "#4F546B",
     label: "Beh's House",
     parent: "town",
+    type: "IndoorScene",
     spawn: {x: 415, y: 780,},
     npc: {
       samurai: { position: { x: 800, y: 225 } },
@@ -29,6 +30,7 @@ const location = {
     bgcolor: "#3B2821",
     label: "Your House",
     parent: "town",
+    type: "IndoorScene",
     spawn: {x: 215, y: 310,}
   }
 };
