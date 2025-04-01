@@ -3,7 +3,7 @@ const app = express();
 const {dialogue} = require("./codyssey/dialogue")
 const {quest} = require("./codyssey/quest")
 const {door} = require("./codyssey/door")
-const {indoor} = require("./codyssey/indoor")
+const {location} = require("./codyssey/location")
 const {npc} = require("./codyssey/npc")
 
 
@@ -31,9 +31,9 @@ app.get('/door', (req, res) => {
     console.log(door);
 });
 
-app.get('/indoor', (req, res) => {
-    res.json(indoor);
-    console.log(indoor);
+app.get('/location', (req, res) => {
+    res.json(location);
+    console.log(location);
 });
 
 app.get('/npc', (req, res) => {
