@@ -1,39 +1,37 @@
 const dialogue = {
   bin: {
     quest1intro: {
-      "Do you want to live in bin or marry bin?": {
+      "Do you want to open or close bin?": {
         choice: {
-          "Live in bin": {
-            respond: "Welcome home, you definitely belong in the bin!",
+          "Open bin": {
+            respond: "You had opened the bin!",
           },
-          "Marry bin": {
-            respond: "Congrats on your marriage!",
+          "Close bin": {
+            respond: "The bin is now closed!",
           },
         },
       },
-      "Please go get some help!": "",
-      "Who will even want to live in bin or even marry the smelly bin.": "",
-      "You are the first one that does it no cap no aura.": "",
-      "Now go get the shit in the toilet.": {
+      "Anyways, I am bin. You can call me bin.": "",
+      "I need your help to take the tissue paper to the toilet.": {
         fulfill: "end_quest1_intro",
         respond: "",
       },
     },
 
     quest1start: {
-      "Go get the shit in the toilet!": "",
+      "Take the tissue paper to the toilet!": "",
     },
 
     quest2intro: {
-      "Good job in getting the shit in the skibidi toilet!": "",
-      "Next, go get the trash in the oiia!": {
+      "Good job in taking the tissue paper to the toilet!": "",
+      "Next, take the food and give it to the cat!": {
         fulfill: "end_quest2_intro",
         respond: "",
       },
     },
 
     quest2start: {
-      "Go get the trash in the oiia!": "",
+      "Take the good and give it to the cat!": "",
     },
 
     quest3intro: {
@@ -55,35 +53,35 @@ const dialogue = {
 
   apu: {
     quest1start: {
-      "What do you want?": {
+      "What do you need?": {
         choice: {
-          Trash: {
-            item: "trash",
+          Tissue: {
+            item: "tissue",
             mode: "take",
-            respond: "Here you go! Trash taking trash!",
+            respond: "Here you go, one box of tissue paper!",
           },
 
-          Shit: {
-            item: "shit",
+          Food: {
+            item: "food",
             mode: "take",
-            respond: "Here you go! Shit taking shit!",
+            respond: "Here you go, one pack of cat food!",
           },
         },
       },
     },
     quest2start: {
-      "What do you want?": {
+      "What do you need?": {
         choice: {
-          Trash: {
-            item: "trash",
+          Tissue: {
+            item: "tissue",
             mode: "take",
-            respond: "Here you go! Trash taking trash!",
+            respond: "Here you go, one box of tissue paper!",
           },
 
-          Shit: {
-            item: "shit",
+          Food: {
+            item: "food",
             mode: "take",
-            respond: "Here you go! Shit taking shit!",
+            respond: "Here you go, one pack of cat food!",
           },
         },
       },
@@ -92,20 +90,20 @@ const dialogue = {
 
   toilet: {
     quest1start: {
-      "Skibidi skibidi toilet": "",
-      "What is your problem?": {
+      "Good morning": "",
+      "Did you get me a box of tissue paper?": {
         choice: {
-          "Give Shit": {
-            item: "shit",
+          "Give Tissue": {
+            item: "tissue",
             mode: "give",
-            yrespond: "HUUUURGGEHH",
+            yrespond: "Nice! Thanks!",
             nrespond:
-              "Bro doesn't have shit. I wonder what does bro still can have.",
+              "Looks like you forgot to get me a box of tissue paper!",
             fulfill: "done_shit_to_toilet",
           },
 
           Bye: {
-            respond: "What the sigma?",
+            respond: "See you later.",
           },
         },
       },
@@ -119,12 +117,12 @@ const dialogue = {
       },
       "Oiiai, oiiai?": {
         choice: {
-          "Give Trash": {
-            item: "trash",
+          "Give Food": {
+            item: "food",
             mode: "give",
-            yrespond: "EEEEEEAAAAAAAAAAAAAAARRRRRRRRRRRRRREIR",
+            yrespond: "Nom nom nom!",
             nrespond:
-              "Nub trash, I can now talk English more than just oiia because I see you nub",
+              "Meow? No food?",
             fulfill: "done_trash_to_cat",
           },
 
@@ -139,7 +137,7 @@ const dialogue = {
   samurai:{
     quest3start: {
       "Hello, I am Samurai!": "",
-      "Nothing to do in the house. Get out!!!": {
+      "Nothing to do in the house. See you later!!": {
         fulfill: "end_quest3_start",
         respond: "",
       },
